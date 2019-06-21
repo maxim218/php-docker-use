@@ -1,0 +1,9 @@
+version: "3"
+services:
+  php-doc:
+    build:
+      context: ./php-doc
+      dockerfile: Dockerfile
+    image: php-doc:tag
+    ports:
+      - "80:80"
